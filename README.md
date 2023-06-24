@@ -1,13 +1,15 @@
-# Boilerplate and Starter for Next JS 13+, Tailwind CSS 3.3 and TypeScript [![Twitter](https://img.shields.io/twitter/url/https/twitter.com/cloudposse.svg?style=social&label=Follow%20%40Ixartz)](https://twitter.com/ixartz)
+# Boilerplate and Starter for Web3 UI development
 
-<p align="center">
-  <a href="https://creativedesignsguru.com/demo/Nextjs-Boilerplate/"><img src="public/assets/images/nextjs-starter-banner.png?raw=true" alt="Next js starter banner"></a>
-</p>
 
-🚀 Boilerplate and Starter for Next.js, Tailwind CSS and TypeScript ⚡️ Made with developer experience first: Next.js, TypeScript, ESLint, Prettier, Husky, Lint-Staged, Jest, Testing Library, Commitlint, VSCode, Netlify, PostCSS, Tailwind CSS.
+🚀 Boilerplate and Starter for Next.js, Tailwind CSS , Daisyui, WAGMI and TypeScript ⚡️ Made with developer experience first: Next.js, TypeScript, ESLint, Prettier, Husky, Lint-Staged, Jest, Testing Library, Commitlint, VSCode, Netlify, PostCSS, Tailwind CSS.
 
-Clone this project and use it to create your own [Next.js](https://nextjs.org) project. You can check a [Next js templates demo](https://creativedesignsguru.com/demo/Nextjs-Boilerplate/).
+Clone this project and use it to create your own [Next.js](https://nextjs.org) project. You can check a [MakeWeb3 templates demo](https://boilerplate.makeweb3.io/).
 
+### Environment variable
+```shell
+ # Control SUPPORTED_CHAIN_IDS and DEFAULT_CHAIN_ID in src/configs/web3/chains.ts
+ NEXT_PUBLIC_BUILD_TYPE = "production | development"
+```
 ### Features
 
 Developer experience first:
@@ -51,19 +53,6 @@ Built-in feature from Next.js:
 - SEO-friendly
 - 🚀 Production-ready
 
-### Nextless.js SaaS Boilerplate
-
-Build your SaaS product faster with [React SaaS Boilerplate](https://nextlessjs.com).
-
-[![React SaaS Boilerplate Next.js](https://creativedesignsguru.com/assets/images/themes/next-js-saas-starter-kit.jpg)](https://nextlessjs.com)
-
-### Premium Themes
-
-| [Green Nextjs Landing Page Template](https://creativedesignsguru.com/landing-green-modern-nextjs-theme/) | [Purple Saas Nextjs Theme](https://creativedesignsguru.com/landing-purple-modern-react-theme/) |
-| --- | --- |
-| [![Green Nextjs Landing Page Template](https://creativedesignsguru.com/assets/images/themes/landing-green-modern-nextjs-theme-xs.png)](https://creativedesignsguru.com/landing-green-modern-nextjs-theme/) | [![Blue Landing Page Nextjs Theme](https://creativedesignsguru.com/assets/images/themes/landing-blue-modern-nextjs-theme-xs.png)](https://creativedesignsguru.com/landing-blue-modern-react-theme/) |
-
-Find more [Nextjs Themes](https://creativedesignsguru.com/category/nextjs/).
 
 ### Requirements
 
@@ -94,8 +83,11 @@ Open http://localhost:3000 with your favorite browser to see your project.
 ├── .github                         # GitHub folder
 ├── .husky                          # Husky configuration
 ├── .vscode                         # VSCode configuration
-├── public                          # Public assets folder
+├── public                          # Public assets folder etc. chain's logo
 ├── src
+│   ├── constants                   # constants folder etc. website info, api endpoint...
+│   ├── configs                     # configs folder etc. abi, contract, wallet, chain and wagmi...
+│   ├── components                  # UI components
 │   ├── layouts                     # Layouts components
 │   ├── pages                       # Next JS Pages
 │   ├── pages.test                  # Next JS Pages tests (this avoids tests to be treated as a Next.js pages)
@@ -183,6 +175,5 @@ See [LICENSE](LICENSE) for more information.
 
 ---
 
-Made with ♥ by [CreativeDesignsGuru](https://creativedesignsguru.com) [![Twitter](https://img.shields.io/twitter/url/https/twitter.com/cloudposse.svg?style=social&label=Follow%20%40Ixartz)](https://twitter.com/ixartz)
+Credit to [CreativeDesignsGuru](https://creativedesignsguru.com) 
 
-[![React SaaS Boilerplate](https://creativedesignsguru.com/assets/images/themes/next-js-saas-starter-kit.jpg)](https://nextlessjs.com)
