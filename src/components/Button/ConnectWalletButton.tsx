@@ -8,7 +8,11 @@ export default function ConnectWalletButton() {
   const { connect } = useWeb3();
   return (
     <>
-      <button className="btn" onClick={() => dialogRef.current?.showModal()}>
+      <button
+        data-testid="connect-wallet"
+        className="btn"
+        onClick={() => dialogRef.current?.showModal()}
+      >
         connect wallet
       </button>
       <dialog ref={dialogRef} className="modal">
@@ -16,7 +20,10 @@ export default function ConnectWalletButton() {
           <button className="btn-ghost btn-sm btn-circle btn absolute right-2 top-2">
             ✕
           </button>
-          <div className="flex flex-col space-y-9">
+          <div
+            data-testid="connect-wallet-modal"
+            className="flex flex-col space-y-9"
+          >
             {Object.values(wallets)
               .filter((wallet) => !wallet.isHidden)
               .map((wallet) => (
